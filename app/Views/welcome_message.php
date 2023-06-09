@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -6,7 +6,7 @@
 	<meta name="description" content="The small framework with powerful features">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" type="image/png" href="/favicon.ico"/>
-
+	<link href="<?= base_url()?> /css/styles.css" rel="stylesheet"'/>
 	<!-- STYLES -->
 
 	<style {csp-style-nonce}>
@@ -195,7 +195,7 @@
 </head>
 <body>
 
-<!-- HEADER: MENU + HEROE SECTION -->
+
 <header>
 
 	<div class="menu">
@@ -227,7 +227,7 @@
 
 </header>
 
-<!-- CONTENT -->
+
 
 <section>
 
@@ -243,8 +243,8 @@
 
 	<pre><code>app/Controllers/Home.php</code></pre>
 
-	<a href ="welcome/contact">Contact</a><br>
-	<a href ="welcome/about">About</a>
+	<a href ='contact'>Contact</a><br>
+	<a href ='about'>About</a>
 
 </section>
 
@@ -289,7 +289,7 @@
 
 </div>
 
-<!-- FOOTER: DEBUG INFO + COPYRIGHTS -->
+ FOOTER: DEBUG INFO + COPYRIGHTS -->
 
 <footer>
 	<div class="environment">
@@ -309,7 +309,7 @@
 
 </footer>
 
-<!-- SCRIPTS -->
+
 
 <script>
 	function toggleMenu() {
@@ -322,7 +322,10 @@
 	}
 </script>
 
-<!-- -->
+
 
 </body>
-</html>
+</html> -->
+
+
+ -->
