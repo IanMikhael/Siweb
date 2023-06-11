@@ -5,7 +5,7 @@ namespace Config;
 use App\Controllers\Admin\users;
 use App\Controllers\Customer;
 use App\Controllers\Home;
-use App\Controllers\Penjualan;
+// use App\Controllers\Penjualan;
 use CodeIgniter\Commands\Utilities\Routes;
 
 // Create a new instance of our RouteCollection class.
@@ -152,7 +152,8 @@ $routes->group('jual', ['filter' => 'auth'], function ($r)
     $r->get('gettotal', 'Penjualan::getTotal');
     $r->post('/', 'Penjualan::addCart');
     $r->post('update', 'Penjualan::updateCart');
-    $r->post('bayar', 'Penjualan::pembayaran');
+    // $r->post('bayar', 'Penjualan::pembayaran');
+    $r->post('bayar/', [\App\Controllers\Penjualan::class, 'pembayaran']);
     $r->delete('(:any)', 'Penjualan::deleteCart/$1');
     $r->get('laporan', 'Penjualan::report');
     $r->post('laporan/filter', 'Penjualan::filter');
